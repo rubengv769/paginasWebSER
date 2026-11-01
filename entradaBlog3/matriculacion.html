@@ -1,11 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IES Tom Ellis - Matriculación</title>
+  <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/matriculacion.css">
 </head>
+
 <body>
-  
+  <header>
+    <h1>Formulario de matriculación.</h1>
+  </header>
+  <main>
+    <form action="matriculacion.html" method="post">
+      <fieldset id="datosAlumno">
+        <legend>Datos del alumno/a</legend>
+        <label for="primerApellido">Primer apellido:</label>
+        <input type="text" name="primerApellido" maxlength="70" minlength="3" required>
+        <label for="segundoApellido">Segundo apellido:</label>
+        <input type="text" name="segundoApellido" maxlength="70" minlength="3">
+        <label for="name">Nombre:</label>
+        <input type="text" name="nombre" max="70" minlength="3" required autofocus>
+        <label for="sexo">Sexo:</label>
+        <input type="radio" name="sexo" required>
+        <p>Hombre</p>
+        <input type="radio" name="sexo" required>
+        <p>Mujer</p>
+        <input type="radio" name="sexo" required>
+        <p>Otros</p>
+        <br>
+        <label for="idPasaporte">Número seguridad social/Pasaporte:</label>
+        <input type="text" name="idPasaporte" placeholder="123-45-6789"
+          pattern="\d{3}-\d{2}-\d{4}" required>
+        <br>
+        <label for="ciudadNacimiento">Ciudad de nacimiento:</label>
+        <input type="text" name="ciudadNacimiento" maxlength="60" minlength="3" required>
+        <label for="estadoNacimiento">Estado de nacimiento:</label>
+        <input type="text" maxlength="60" minlength="3" required>
+        <label for="paisNacimiento">País de nacimiento:</label>
+        <input type="text" maxlength="50" minlength="3" required>
+        <label for="fechaNacimiento">Fecha de nacimiento:</label>
+        <input type="date" name="fechaNacimiento" required>
+        <br>
+        <label for="telefonoContacto">Teléfono de contacto:</label>
+        <input type="tel" name="telefonoContacto" placeholder="123-456-7890" pattern="\d{3}-\d{2}-\d{2}" required>
+        <label for="correoContacto">Correo electronico de contacto:</label>
+        <input type="email" name="correoContacto" minlength="3" required>
+      </fieldset>
+      <fieldset id="datosTutor">
+        <legend>Datos del tutor/a legal</legend>
+        <label for="primerApellidoTutor">Primer apellido:</label>
+        <input type="text" name="primerApellidoTutor" maxlength="70" minlength="3" required>
+        <label for="segundoApellidoTutor">Segundo apellido:</label>
+        <input type="text" name="segundoApellidoTutor" maxlength="70" minlength="3">
+        <label for="nameTutor">Nombre:</label>
+        <input type="text" name="nombreTutor" max="70" minlength="3" required>
+        <label for="sexoTutor">Sexo:</label>
+        <input type="radio" name="sexoTutor">
+        <p>Hombre</p>
+        <input type="radio" name="sexoTutor">
+        <p>Mujer</p>
+        <input type="radio" name="sexoTutor">
+        <p>Otros</p>
+        <br>
+        <label for="idPasaporteTutor">Número seguridad social/Pasaporte:</label>
+        <input type="text" name="idPasaporteTutor" placeholder="123-45-6789" minlength="11" maxlength="11"
+          pattern="\d{3}-\d{2}-\d{4}" required>
+        <br>
+        <label for="relacionFamiliarTutor">Relación familiar:</label>
+        <input type="text" name="relacionFamiliarTutor" maxlength="30" minlength="3" required>
+        <label for="telefonoContactoTutor">Teléfono de contacto:</label>
+        <input type="tel" name="telefonoContactoTutor" placeholder="123-456-7890" pattern="\d{3}-\d{2}-\d{2}" required>
+        <label for="correoContactoTutor">Correo electronico de contacto:</label>
+        <input type="email" name="correoContactoTutor" minlength="3" required>
+      </fieldset>
+      <fieldset id="datosCentro">
+        <legend>Datos del centro</legend>
+        <label for="curso">Curso a cursar:</label>
+        <select name="cursoACursar" required>
+          <optgroup label="Educación primaria:">
+            <option value="primeroPrimaria">1ºPrimaria.</option>
+            <option value="segundoPrimaria">2ºPrimaria.</option>
+            <option value="terceroPrimaria">3ºPrimaria.</option>
+            <option value="cuartoPrimaria">4ºPrimaria.</option>
+            <option value="quintoPrimaria">5ºPrimaria.</option>
+            <option value="sextoPrimaria">6ºPrimaria.</option>
+          </optgroup>
+          <optgroup label="Educación secundaria:">
+            <option value="primeroSecundaria">1ºSecundaria.</option>
+            <option value="segundoSecundaria">2ºSecundaria.</option>
+            <option value="terceroSecundaria">3ºSecundaria.</option>
+            <option value="cuartoSecundaria">4ºSecundaria.</option>
+          </optgroup>
+        </select>
+      </fieldset>
+      <div>
+        <button type="submit">Enviar todo</button>
+        <button type="reset">Borrar formulario</button>
+      </div>
+    </form>
+  </main>
 </body>
+
 </html>
