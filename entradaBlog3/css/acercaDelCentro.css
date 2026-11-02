@@ -17,3 +17,10 @@ ul, li {
   padding: 6px;
   margin: 2px;
 }
+
+a {
+  padding: 5px;
+  margin: 2px;
+  text-decoration: none;
+  color: plum;
+}

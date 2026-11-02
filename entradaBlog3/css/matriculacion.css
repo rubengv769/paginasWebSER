@@ -52,3 +52,24 @@ form > div {
 #datosTutor {
   background-color: slateblue;
 }
+
+button {
+  border: 2px solid black;
+  background-color: gold;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+button:last-of-type {
+  background-color: lightcoral;
+}
+
+a {
+  padding: 5px;
+  margin: 2px;
+  text-decoration: none;
+  color: plum;
+}

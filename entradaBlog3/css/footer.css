@@ -1,0 +1,19 @@
+footer {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: gray;
+  left: 0;
+  color: white;
+}
+
+footer div {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+footer ul {
+  list-style-type: none;
+}

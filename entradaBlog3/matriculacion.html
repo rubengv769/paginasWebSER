@@ -7,6 +7,7 @@
   <title>IES Tom Ellis - Matriculación</title>
   <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
   <link rel="stylesheet" href="css/matriculacion.css">
+  <link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body>
@@ -18,11 +19,11 @@
       <fieldset id="datosAlumno">
         <legend>Datos del alumno/a</legend>
         <label for="primerApellido">Primer apellido:</label>
-        <input type="text" name="primerApellido" maxlength="70" minlength="3" required>
+        <input type="text" name="primerApellido" maxlength="70" minlength="3" required placeholder="Ingrese su primer apellido">
         <label for="segundoApellido">Segundo apellido:</label>
-        <input type="text" name="segundoApellido" maxlength="70" minlength="3">
+        <input type="text" name="segundoApellido" maxlength="70" minlength="3" placeholder="Ingrese su segundo apellido">
         <label for="name">Nombre:</label>
-        <input type="text" name="nombre" max="70" minlength="3" required autofocus>
+        <input type="text" name="nombre" max="70" minlength="3" required autofocus placeholder="Ingrese su nombre">
         <label for="sexo">Sexo:</label>
         <input type="radio" name="sexo" required>
         <p>Hombre</p>
@@ -32,31 +33,30 @@
         <p>Otros</p>
         <br>
         <label for="idPasaporte">Número seguridad social/Pasaporte:</label>
-        <input type="text" name="idPasaporte" placeholder="123-45-6789"
-          pattern="\d{3}-\d{2}-\d{4}" required>
+        <input type="text" name="idPasaporte" placeholder="123-45-6789" pattern="\d{3}-\d{2}-\d{4}" required>
         <br>
         <label for="ciudadNacimiento">Ciudad de nacimiento:</label>
-        <input type="text" name="ciudadNacimiento" maxlength="60" minlength="3" required>
+        <input type="text" name="ciudadNacimiento" maxlength="60" minlength="3" required placeholder="Ingrese su ciudad de nacimiento">
         <label for="estadoNacimiento">Estado de nacimiento:</label>
-        <input type="text" maxlength="60" minlength="3" required>
+        <input type="text" maxlength="60" minlength="3" required placeholder="Ingrese su estdo de nacimiento">
         <label for="paisNacimiento">País de nacimiento:</label>
-        <input type="text" maxlength="50" minlength="3" required>
+        <input type="text" maxlength="50" minlength="3" required placeholder="Ingrese su pais de nacimiento">
         <label for="fechaNacimiento">Fecha de nacimiento:</label>
         <input type="date" name="fechaNacimiento" required>
         <br>
         <label for="telefonoContacto">Teléfono de contacto:</label>
-        <input type="tel" name="telefonoContacto" placeholder="123-456-7890" pattern="\d{3}-\d{2}-\d{2}" required>
+        <input type="tel" name="telefonoContacto" placeholder="123-45-78" pattern="\d{3}-\d{2}-\d{2}" required>
         <label for="correoContacto">Correo electronico de contacto:</label>
-        <input type="email" name="correoContacto" minlength="3" required>
+        <input type="email" name="correoContacto" minlength="3" required placeholder="Ingrese su correo de contacto">
       </fieldset>
       <fieldset id="datosTutor">
         <legend>Datos del tutor/a legal</legend>
         <label for="primerApellidoTutor">Primer apellido:</label>
-        <input type="text" name="primerApellidoTutor" maxlength="70" minlength="3" required>
+        <input type="text" name="primerApellidoTutor" maxlength="70" minlength="3" required placeholder="Ingrese el primer apellido del tutor">
         <label for="segundoApellidoTutor">Segundo apellido:</label>
-        <input type="text" name="segundoApellidoTutor" maxlength="70" minlength="3">
+        <input type="text" name="segundoApellidoTutor" maxlength="70" minlength="3" placeholder="Ingrese el segundo apellido del tutor">
         <label for="nameTutor">Nombre:</label>
-        <input type="text" name="nombreTutor" max="70" minlength="3" required>
+        <input type="text" name="nombreTutor" max="70" minlength="3" required placeholder="Ingrese el nombre del tutor">
         <label for="sexoTutor">Sexo:</label>
         <input type="radio" name="sexoTutor">
         <p>Hombre</p>
@@ -70,11 +70,11 @@
           pattern="\d{3}-\d{2}-\d{4}" required>
         <br>
         <label for="relacionFamiliarTutor">Relación familiar:</label>
-        <input type="text" name="relacionFamiliarTutor" maxlength="30" minlength="3" required>
+        <input type="text" name="relacionFamiliarTutor" maxlength="30" minlength="3" required placeholder="Ingrese la relación familiar con el tutor">
         <label for="telefonoContactoTutor">Teléfono de contacto:</label>
-        <input type="tel" name="telefonoContactoTutor" placeholder="123-456-7890" pattern="\d{3}-\d{2}-\d{2}" required>
+        <input type="tel" name="telefonoContactoTutor" placeholder="123-456-78" pattern="\d{3}-\d{2}-\d{2}" required>
         <label for="correoContactoTutor">Correo electronico de contacto:</label>
-        <input type="email" name="correoContactoTutor" minlength="3" required>
+        <input type="email" name="correoContactoTutor" minlength="3" required placeholder="Ingrese el correo de contacto del tutor">
       </fieldset>
       <fieldset id="datosCentro">
         <legend>Datos del centro</legend>
@@ -102,6 +102,25 @@
       </div>
     </form>
   </main>
+  <footer>
+    <div>
+      <h3>Ubicación</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3308.140732836932!2d-118.46250326783323!3d33.988918765974326!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2ba958db49f7b%3A0x4893933c9c80469f!2sVenice%20Blvd.%20%26%20Abbot%20Kinney%20Blvd%2C%20Los%20Angeles%2C%20CA%2090291%2C%20EE.%20UU.!5e0!3m2!1ses!2ses!4v1793608085804!5m2!1ses!2ses"
+        width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+    <div>
+      <h3>Contacto</h3>
+      <ul>
+        <li>Venice Boulevard Nº 13 - Los Angeles (California)</li>
+        <li>Teléfono: 79865432</li>
+        <li>Email: <a href="mailto:iestomellis@losangeles.com">iestomellis@losangeles.com</a></li>
+        <br>
+        <li>Secretaría: De 8:00 a 15:00 de lunes a viernes</li>
+      </ul>
+    </div>
+  </footer>
 </body>
 
 </html>
