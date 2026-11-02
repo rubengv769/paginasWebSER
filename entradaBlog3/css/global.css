@@ -1,5 +1,6 @@
 body {
   background-color: #9c969a;
+  color: #7f3434;
 }
 
 h1, h2 {
@@ -9,7 +10,7 @@ h1, h2 {
   width: 31%;
   padding: 6px;
   margin: 0 auto;
-  border: 2px solid black;
+  border: 2px solid #dcd7d5;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
